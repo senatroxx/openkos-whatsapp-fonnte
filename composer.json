@@ -1,0 +1,53 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "openkos/whatsapp-fonnte",
+    "description": "Fonnte WhatsApp notification driver for OpenKOS.",
+    "keywords": [
+        "openkos",
+        "whatsapp",
+        "fonnte",
+        "notifications"
+    ],
+    "license": "Apache-2.0",
+    "require": {
+        "php": "^8.3",
+        "illuminate/http": "^13.0",
+        "illuminate/support": "^13.0",
+        "openkos/platform": "^0.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^11.0",
+        "pestphp/pest": "^4.7",
+        "pestphp/pest-plugin-laravel": "^4.1",
+        "laravel/pint": "^1.27"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenKOS\\WhatsAppFonnte\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "@php vendor/bin/pest",
+        "lint": "@php vendor/bin/pint --test --format agent"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OpenKOS\\WhatsAppFonnte\\FonnteServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
