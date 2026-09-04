@@ -14,8 +14,9 @@ Set the Fonnte token in the application environment:
 FONNTE_TOKEN=your-fonnte-token
 ```
 
-The package registers the `openkos/fonnte` WhatsApp driver automatically. In
-OpenKOS settings, select the `fonnte` driver and save its token when using
-application-managed credentials.
+OpenKOS discovers this package through its canonical runtime plugin entrypoint
+when it is installed. The package registers the `openkos/fonnte` WhatsApp
+driver. In OpenKOS settings, select the `fonnte` driver and save its token
+when using application-managed credentials.
 
 Fonnte does not support WhatsApp pairing or QR codes.

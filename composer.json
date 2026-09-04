@@ -36,10 +36,8 @@
         "lint": "@php vendor/bin/pint --test --format agent"
     },
     "extra": {
-        "laravel": {
-            "providers": [
-                "OpenKOS\\WhatsAppFonnte\\FonnteServiceProvider"
-            ]
+        "openkos": {
+            "plugin": "OpenKOS\\WhatsAppFonnte\\FonntePlugin"
         }
     },
     "config": {
