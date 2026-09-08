@@ -13,7 +13,7 @@ final class FonntePlugin extends Plugin
         return new PluginManifest(
             id: 'openkos/whatsapp-fonnte',
             name: 'Fonnte WhatsApp',
-            version: '0.2.3',
+            version: '0.2.4',
             description: 'Fonnte WhatsApp notification driver for OpenKOS.',
             coreVersion: '^0.2',
         );
