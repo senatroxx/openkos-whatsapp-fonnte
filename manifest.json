@@ -1,10 +1,10 @@
 {
     "id": "openkos/whatsapp-fonnte",
     "name": "Fonnte WhatsApp",
-    "version": "0.2.6",
+    "version": "0.2.7",
     "description": "Fonnte WhatsApp notification driver for OpenKOS.",
     "entry_class": "OpenKOS\\WhatsAppFonnte\\FonntePlugin",
     "core_version": "^0.2",
-    "php": "^8.3",
+    "php": ">=8.4 <8.6",
     "dependencies": []
 }
